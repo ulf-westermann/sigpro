@@ -40,7 +40,7 @@ class DriverUsbHidBrymenBm86x(driver_usbhid_base.DriverUsbHidBase):
         self.send(bytes([0, 0, 0x86, 0x66]))
 
         report = self.read_channels()
-        print(report)
+        print(report.hex())
 
         self.device.close()
 
