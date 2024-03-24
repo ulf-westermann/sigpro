@@ -1,6 +1,5 @@
 import argparse
 import signal
-import sys
 import time
 
 import driver_serial_metex_14_byte
