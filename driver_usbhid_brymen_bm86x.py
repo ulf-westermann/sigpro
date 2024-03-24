@@ -15,13 +15,13 @@ class DriverUsbHidBrymenBm86x(driver_usbhid_base.DriverUsbHidBase):
         bytes_remaining = 27 - 3
         report = bytearray()
         while bytes_remaining > 0:
+            #self.device.get_feature_report() use this???
             data = self.device.read(bytes_remaining, timeout_ms=4000)
             bytes_returned = len(data)
             if bytes_returned == 0:
                 break
             report.extend(data)
             bytes_remaining -= len(data)
-
         return report
 
     def acquire_data(self):
