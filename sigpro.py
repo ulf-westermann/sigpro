@@ -5,33 +5,6 @@ import driver_serial_metex_14_byte
 import driver_usbhid_brymen_bm86x
 
 
-
-#import hid
-#
-#def read_report(device) -> bytes:
-#    bytes_remaining = 27 - 3
-#    report = bytearray()
-#    while bytes_remaining > 0:
-#        data = device.read(bytes_remaining, timeout_ms=4000)
-#        bytes_returned = len(data)
-#        if bytes_returned == 0:
-#            break
-#        report.extend(data)
-#        bytes_remaining -= len(data)
-#
-#    return report
-
-#while True:
-#    device = hid.device()
-#    device.open(0x820, 1)
-#    device.set_nonblocking(False)
-#    device.write([0, 0, 0x86, 0x66])
-#    data = read_report(device)
-#    print(f"data: {data.hex(' ')}")
-#    device.close()
-#    #time.sleep(1)
-
-
 def signal_handler(sig, frame):
     driver.close()
 
