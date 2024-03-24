@@ -1,6 +1,5 @@
 import argparse
 import signal
-import time
 
 import driver_serial_metex_14_byte
 import driver_usbhid_brymen_bm86x
