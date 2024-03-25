@@ -1,2 +1,3 @@
 # sigpro
-Acquire data from measurment devices like DMMs, and log them to a file.
+
+Acquire data from measurement devices like DMMs, and log them into files.
