@@ -1,9 +1,8 @@
 # sigpro
 
-Acquire data from measurment devices like DMMs, and log them to a file.
+Acquire data from measurement devices like DMMs, and log them into files.
 
 Supported devices:
 
 * Metex/Voltcraft M3860-M
 * Brymen BM869s (work in progress)
-
